@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - Sign up Page</title>
+    <link rel="icon" type="image/x-icon" href="/Images/Github fav icon.png">
+
+    <link rel="stylesheet" href="/signup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navbar  -->
+
+    <header>
+        <div class="navbar">
+            <div class="menu-list">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="/Images/Github fav icon.png">
+                    </div>
+                </a>
+                <ul>
+                    <li>Product</li>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <li>Solutions</li>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <li>Resources</li>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <li>Open Source</li>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <li>Enterprise</li>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content  -->
+
+    <div class="background-img">
+        <img src="/Images/github gradient.png">
+    </div>
+    <div class="Signup-form">
+        <h2>Sign up</h2><br>
+        <div class="Signup-info">
+            
+            <!-- Full name -->
+            
+            <div class="textbox-outline">
+                <input type="text" placeholder="Enter full name">
+                <i class="fa-solid fa-user"></i>
+            </div>
+             
+            <!-- Email -->
+            
+            <div class="textbox-outline">
+                <input type="email" placeholder="Enter email address">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+                
+            <!-- Mobile number & birthdate common div  -->
+
+            <div class="mobile-dob">
+
+            <!-- Mobile number -->
+
+                <div class="half-textbox">
+                    <input type="text" placeholder="Enter mobile number">
+                    <i class="fa-solid fa-phone"></i>
+                </div>   
+
+                <!-- Birthdate -->
+                
+                <div class="half-textbox">
+                    <input type="text" placeholder="DD-MM-YYYY">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+            </div>    
+
+            <div class="gender">
+                <label for="001">
+                    <input type="radio" id="001" value="Rememberme" name="remember-me"> Male
+                </label>
+                <label for="002">
+                    <input type="radio" id="002" value="Rememberme" name="remember-me"> Female
+                </label>
+                <label for="003">
+                    <input type="radio" id="003" value="Rememberme" name="remember-me"> Prefer not to say
+                </label>
+            </div>
+
+            <!-- Address -->
+
+            <div class="address-textbox-outline">
+                 <input type="text" placeholder="Enter address"/>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <!-- Register Button  -->
+            <a href="/Login page.html">
+                <div class="register-button">
+                    <input type="submit" value="Register">
+                </div>
+            </a>
+
+            <!-- Sign in text -->
+
+            <div class="login">
+                <p>Already have an account? 
+                <a href="/Login page.html" target="_blank"> Sign in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

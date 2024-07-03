@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121321;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    font-family: "poppins", sans-serif;
+
+    display: grid;
+    place-items: center;
+}
+
+body .background-img{
+    z-index: -100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+}
+
+body .background-img img{
+    height: 600px;
+    width: 600px;
+}
+
+/* Navbar  */
+
+.navbar{
+    height: 40px;
+    width: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 16px 0 16px 0;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    flex-wrap: nowrap;
+}
+
+.navbar .menu-list {
+    width:fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+
+    font-size: 16px;
+}
+
+.navbar .menu-list .logo{
+    height: 30px;
+    width: 35px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 16px;
+}
+
+.navbar .menu-list .logo img{
+    height: 32px;
+    width: 35px;
+}
+
+.navbar .menu-list ul{
+    width: max-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 14px;
+}
+
+.navbar .menu-list ul li{
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    list-style-type: none;
+
+    padding-left: 10px; 
+    color: #fff;
+}
+
+.navbar .menu-list ul i{
+    margin-left: 4px;
+    color: gray;
+}
+
+/* Signup form */
+
+::placeholder{
+    color: rgb(198, 193, 193);
+}
+
+.Signup-form{
+    height: 580px;
+    width: 520px;
+
+    backdrop-filter: blur(15px);
+    border: 1px solid white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 0px 20px 0px;
+    z-index: 100;
+}
+
+.Signup-form h2{
+    color: #fff;
+    font-size: 30px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+
+    margin-bottom: 0px;
+    text-shadow: 7px 7px 5px #121321;
+}
+
+.Signup-form .Signup-info{
+    height: 400px;
+    padding: 0px 30px 0px 30px;
+    border-radius: 20px;
+}
+
+/* Common css for all textboxes in the form */
+
+.Signup-form .Signup-info .textbox-outline {
+    height: 40px;
+    width: 100%;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 30px;
+}
+
+.Signup-form .Signup-info .textbox-outline input{
+    color: #fff;
+
+    height: 40px;
+    width: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.Signup-form .Signup-info .textbox-outline i{
+    color: #fff;
+}
+
+.Signup-form .Signup-info .textbox-outline:focus-within{
+    box-shadow: 0px 0px 5px 5px   rgba(215, 191, 191, 0.4);
+}
+
+/* Mobile number & Birthdate */
+
+/* Common div  */
+
+.mobile-dob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile number and Birthdate common css properties  */
+
+.Signup-form .Signup-info .half-textbox {
+    height: 40px;
+    width: 47%;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 30px 0px 30px;
+
+    margin-bottom: 30px;
+}
+
+.Signup-form .Signup-info .half-textbox input{
+    color: #fff;
+
+    height: 40px;
+    width: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.Signup-form .Signup-info .half-textbox i{
+    color: #fff;
+}
+
+.Signup-form .Signup-info .half-textbox:focus-within{
+    box-shadow: 0px 0px 5px 5px   rgba(215, 191, 191, 0.4);
+}
+
+/* Gender radio buttons css */
+
+.Signup-form .Signup-info .gender{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+}
+
+.Signup-form .Signup-info .gender label{
+    color: #fff;
+}
+
+/* Address section  */
+
+.Signup-form .Signup-info .address-textbox-outline {
+    height: 80px;
+    width: 100%;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 0px 30px 0px 30px;
+
+    margin-bottom: 30px;
+}
+
+.Signup-form .Signup-info .address-textbox-outline input{
+    color: #fff;
+
+    height: 40px;
+    width: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.Signup-form .Signup-info .address-textbox-outline i{
+    color: #fff;
+
+    padding-top: 12px;
+}
+
+.Signup-form .Signup-info .address-textbox-outline:focus-within{
+    box-shadow: 0px 0px 5px 5px   rgba(215, 191, 191, 0.4);
+}
+
+/* Register button  */
+
+.Signup-form .Signup-info .register-button input{
+    color: #121321;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+
+    height: 40px;
+    width: 100%;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    background: #fff;
+
+    margin-bottom: 20px;
+}
+
+.Signup-form .Signup-info .register-button input:hover{
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0px 0px 5px 5px   rgba(215, 191, 191, 0.4);
+}
+
+/* Sign in */
+
+.Signup-form .Signup-info .login{
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.Signup-form .Signup-info .login a{
+    text-decoration: none;
+    color: #fff;
+
+    font-weight: 600;
+}
+
+.Signup-form .Signup-info .login a:hover{
+    text-decoration: underline;
+}
